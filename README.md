@@ -90,7 +90,7 @@ A classe `FileSystemSimulator` mantém o estado do diretório atual e usa `Path`
 1. Clone o projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/file-system-simulator.git
+git clone https://github.com/pedrolucas802/file-system-sim.git
 cd file-system-simulator/src
 ```
 
