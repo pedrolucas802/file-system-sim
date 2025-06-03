@@ -46,8 +46,10 @@ A classe `FileSystemSimulator` mantém o estado do diretório atual e usa `Path`
 ### Journaling
 
 - Toda operação relevante (como criar, apagar ou renomear arquivos e diretórios) é registrada no `journal.log`.
-- Ao iniciar o sistema, se um `journal.log` antigo existir, ele é automaticamente **renomeado** para `journal_<timestamp>.log`.
-- Um novo `journal.log` é iniciado com a marcação de "Sistema iniciado".
+
+[//]: # (- Ao iniciar o sistema, se um `journal.log` antigo existir, ele é automaticamente **renomeado** para `journal_<timestamp>.log`.)
+
+[//]: # (- Um novo `journal.log` é iniciado com a marcação de "Sistema iniciado".)
 
 ---
 
