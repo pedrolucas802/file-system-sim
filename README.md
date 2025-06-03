@@ -133,7 +133,7 @@ O simulador permite:
 
 ## 🔗 Link para o Projeto
 
-[GitHub](https://github.com/pedrolucas802/file-system-sim)
+[GitHub - Link](https://github.com/pedrolucas802/file-system-sim)
 
 ---
 
