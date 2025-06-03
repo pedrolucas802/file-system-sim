@@ -1,0 +1,9 @@
+2025-06-03T14:49:36.581500 - Sistema iniciado
+2025-06-03T14:49:38.516678 - Listou conteúdo de: filesystem
+2025-06-03T14:49:42.531259 - Entrou no diretório: filesystem/test
+2025-06-03T14:49:44.232638 - Listou conteúdo de: filesystem/test
+2025-06-03T14:49:54.081987 - Criado arquivo: filesystem/test/test.java
+2025-06-03T14:49:56.940118 - Listou conteúdo de: filesystem/test
+2025-06-03T14:50:10.894556 - Criado arquivo: filesystem/test/testerror
+2025-06-03T14:50:12.466452 - Listou conteúdo de: filesystem/test
+2025-06-03T14:50:24.946557 - Sistema finalizado
