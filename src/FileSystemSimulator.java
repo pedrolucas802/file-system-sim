@@ -12,7 +12,6 @@ public class FileSystemSimulator {
 
     public FileSystemSimulator() throws IOException {
         Files.createDirectories(currentPath);
-        rotateLog();
         this.journal = new Journal(LOG_FILE);
         journal.log("Sistema iniciado");
     }
@@ -149,17 +148,17 @@ public class FileSystemSimulator {
                 System.out.println(entry.getFileName());
             }
         }
-        journal.log("Listou conteúdo de: " + dir);
+        //journal.log("Listou conteúdo de: " + dir);
     }
 
     private void changeDirectory(String path) throws IOException {
         if (path.isEmpty()) {
             currentPath = Paths.get(ROOT);
-            journal.log("Voltou para o diretório raiz");
+            //journal.log("Voltou para o diretório raiz");
         } else if (path.equals("..")) {
             if (!currentPath.equals(Paths.get(ROOT))) {
                 currentPath = currentPath.getParent();
-                journal.log("Voltou para o diretório anterior: " + currentPath);
+                //journal.log("Voltou para o diretório anterior: " + currentPath);
             } else {
                 System.out.println("Já está no diretório raiz.");
             }
@@ -167,7 +166,7 @@ public class FileSystemSimulator {
             Path newPath = currentPath.resolve(path).normalize();
             if (Files.exists(newPath) && Files.isDirectory(newPath)) {
                 currentPath = newPath;
-                journal.log("Entrou no diretório: " + newPath);
+                //journal.log("Entrou no diretório: " + newPath);
             } else {
                 throw new FileNotFoundException("Diretório não encontrado: " + path);
             }
