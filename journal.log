@@ -1,26 +1,8 @@
---- Sistema iniciado em 2025-06-03T18:22:33.137503 ---
-2025-06-03T18:22:33.144338 - Sistema iniciado
-2025-06-03T18:22:41.299862 - Criado diretório: filesystem/test
-2025-06-03T18:22:42.154308 - Listou conteúdo de: filesystem
-2025-06-03T18:22:48.073909 - Removido diretório: filesystem/test
-2025-06-03T18:22:49.220480 - Listou conteúdo de: filesystem
-2025-06-03T18:22:51.415610 - Entrou no diretório: filesystem/java
-2025-06-03T18:23:08.642506 - Sistema finalizado
-2025-06-03T18:24:47.969152 - Sistema iniciado
-2025-06-03T18:24:54.345897 - Criado diretório: filesystem/test-folder
-2025-06-03T18:24:55.442904 - Listou conteúdo de: filesystem
-2025-06-03T18:24:59.817122 - Entrou no diretório: filesystem/test-folder
-2025-06-03T18:25:11.190765 - Criado arquivo: filesystem/test-folder/main.html
-2025-06-03T18:25:12.483710 - Listou conteúdo de: filesystem/test-folder
-2025-06-03T18:25:17.286004 - Criado arquivo: filesystem/test-folder/main.js
-2025-06-03T18:25:21.174104 - Criado arquivo: filesystem/test-folder/main.ts
-2025-06-03T18:25:26.754457 - Removido arquivo: filesystem/test-folder/main.js
-2025-06-03T18:25:28.122724 - Listou conteúdo de: filesystem/test-folder
-2025-06-03T18:25:30.998089 - Sistema finalizado
-2025-06-03T18:25:39.293152 - Sistema iniciado
-2025-06-03T18:26:49.943574 - Listou conteúdo de: filesystem
-2025-06-03T18:26:54.332945 - Entrou no diretório: filesystem/test-folder
-2025-06-03T18:26:55.099504 - Listou conteúdo de: filesystem/test-folder
-2025-06-03T18:27:05.262544 - Criado arquivo: filesystem/test-folder/config.ts
-2025-06-03T18:27:06.876037 - Listou conteúdo de: filesystem/test-folder
-2025-06-03T18:27:08.622570 - Sistema finalizado
+mkdir //pasta
+mkdir //test
+touch //pasta/test.txt
+exit
+[2025-06-05 19:10:09] rmdir //test
+[2025-06-05 19:10:29] rename test.txt test_renomeado.txt
+[2025-06-05 19:11:36] touch //pasta/vouapagar.html
+[2025-06-05 19:11:48] rm //pasta/vouapagar.html

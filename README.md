@@ -36,12 +36,12 @@ Se algo falhar, o sistema pode usar esse log para restaurar ou desfazer operaç�
 O simulador é composto pelas seguintes classes:
 
 - `Main`: ponto de entrada, gerencia o loop de comandos.
-- `FileSystemSimulator`: responsável por interpretar e executar comandos.
-- `VirtualFile`: representa um arquivo, com métodos como `create()` e `delete()`.
-- `VirtualDirectory`: representa um diretório (estrutura básica).
+- `old.FileSystemSimulator_old`: responsável por interpretar e executar comandos.
+- `old.VirtualFile`: representa um arquivo, com métodos como `create()` e `delete()`.
+- `old.VirtualDirectory`: representa um diretório (estrutura básica).
 - `Journal`: gerencia o registro de logs (`journal.log`).
 
-A classe `FileSystemSimulator` mantém o estado do diretório atual e usa `Path` para manipular arquivos e diretórios. Cada comando executado gera uma entrada no log.
+A classe `old.FileSystemSimulator_old` mantém o estado do diretório atual e usa `Path` para manipular arquivos e diretórios. Cada comando executado gera uma entrada no log.
 
 ### Journaling
 
@@ -55,19 +55,19 @@ A classe `FileSystemSimulator` mantém o estado do diretório atual e usa `Path`
 
 ## 💻 Parte 3: Implementação em Java
 
-### 📁 Classe `FileSystemSimulator`
+### 📁 Classe `old.FileSystemSimulator_old`
 
 - Gerencia os comandos como `mkdir`, `rmdir`, `cd`, `ls`, `cp`, `rename`, etc.
 - Controla o estado atual (`currentPath`) e executa as operações com base em `java.nio.file`.
 
-### 📄 Classe `VirtualFile`
+### 📄 Classe `old.VirtualFile`
 
 - Representa arquivos do sistema.
 - Métodos:
   - `create()`: cria o arquivo e seu diretório pai, se necessário.
   - `delete()`: remove o arquivo com segurança.
 
-### 📁 Classe `VirtualDirectory`
+### 📁 Classe `old.VirtualDirectory`
 
 - Representa um diretório.
 - Utilizada para encapsular `Path`, mantendo coesão da arquitetura.
@@ -99,7 +99,7 @@ cd file-system-simulator/src
 2. Compile os arquivos:
 
 ```bash
-javac Main.java FileSystemSimulator.java Journal.java VirtualFile.java VirtualDirectory.java
+javac Main.java old.FileSystemSimulator_old.java Journal.java old.VirtualFile.java old.VirtualDirectory.java
 ```
 
 3. Execute o simulador:
